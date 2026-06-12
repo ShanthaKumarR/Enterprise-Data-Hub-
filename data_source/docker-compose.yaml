@@ -1,0 +1,35 @@
+version: '5.1.4'
+
+services:
+  database_one:
+    image: mysql:latest
+    container_name: sales_team
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword1
+      MYSQL_DATABASE: sales_db
+    ports:
+      - "3307:3306" # Accessible on your machine at port 3307
+    volumes:
+      - ./init-scripts/sales_db:/docker-entrypoint-initdb.d
+
+  database_two:
+    image: mysql:latest
+    container_name: products_managment
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword2
+      MYSQL_DATABASE: products_db
+    ports:
+      - "3308:3306" # Accessible on your machine at port 3308
+    volumes:
+      - ./init-scripts/products_db:/docker-entrypoint-initdb.d
+
+  database_three:
+    image: mysql:latest
+    container_name: hr_management
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword3
+      MYSQL_DATABASE: hr_db
+    ports:
+      - "3309:3306" # Accessible on your machine at port 3309
+    volumes:
+      - ./init-scripts/hr_db:/docker-entrypoint-initdb.d
