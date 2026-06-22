@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables (Crucial for security!)
+.env
+.flaskenv
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter noteboo
+.ipynb_checkpoints/
+.idea/
+# my reference files
+main.py
+open_ai.ipynb
