@@ -10,11 +10,11 @@ Orchestrates the full pipeline:
 Run with:  python main.py
 """
 
-from connections import build_engine_registry, build_catalog_engine, run_health_check
-from extractor import extract_all
-from models import create_catalog_schema
-from ingest import ingest_metadata
-from verify import verify_catalog_contents
+from data_catalog.connections import build_engine_registry, build_catalog_engine, run_health_check
+from data_catalog.extractor import extract_all
+from data_catalog.models import create_catalog_schema
+from data_catalog.ingest import ingest_metadata
+from data_catalog.verify import verify_catalog_contents
 
 
 def main():
