@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -35,6 +35,6 @@ Thumbs.db
 .ipynb_checkpoints/
 .idea/
 # my reference files
-main.py
+aws_config.py
 open_ai.ipynb
 test.py
