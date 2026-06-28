@@ -7,7 +7,7 @@ and persists it into the catalog database using the ORM models.
 
 from sqlalchemy.orm import sessionmaker
 
-from models import CatalogContainer, CatalogTable, CatalogColumn
+from data_catalog.models import CatalogContainer, CatalogTable, CatalogColumn
 
 
 def ingest_metadata(catalog_engine, global_metadata_catalog: dict) -> None:

@@ -7,7 +7,7 @@ database, and provides a health check to verify they're reachable.
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import OperationalError
 
-from config import CONTAINER_CONFIGS, CATALOG_DB_CONFIG, build_mysql_url
+from configuration.config import CONTAINER_CONFIGS, CATALOG_DB_CONFIG, build_mysql_url
 
 
 def build_engine_registry() -> dict:
