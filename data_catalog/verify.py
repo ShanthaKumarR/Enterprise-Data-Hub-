@@ -7,7 +7,7 @@ container scanned, how many tables were found, and a sample of columns.
 
 from sqlalchemy.orm import sessionmaker
 
-from models import CatalogContainer
+from data_catalog.models import CatalogContainer
 
 
 def verify_catalog_contents(catalog_engine) -> None:
